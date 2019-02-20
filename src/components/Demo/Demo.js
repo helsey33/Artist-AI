@@ -56,6 +56,7 @@ export default class Demo extends Component {
               pathname: "/summary",
               state: {
                 images: res.data[0].image_links,
+                tags: res.data[0].tags,
                 story: this.state.text
               }
             });

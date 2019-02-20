@@ -15,7 +15,6 @@ export default class Summary extends Component {
       phrase: "",
       images: [],
       story: "",
-      label: "",
       loading: false,
       selectedImage: "",
       styledImage: null
@@ -54,8 +53,7 @@ export default class Summary extends Component {
     axios.post(url, payload).then(res => {
       this.setState(prevState => ({
         images: res.data.image_links,
-        loading: false,
-        label: prevState.phrase
+        loading: false
       }));
     });
   };
@@ -175,11 +173,11 @@ export default class Summary extends Component {
                 <input type="submit" className="button" value="SEARCH" />
               )}
             </form>
-            {!!this.state.label && (
-              <div className="label_wrapper">
-                <div className="label">{this.state.label}</div>
+            <div className="label_wrapper">
+              <div className="label">
+                {this.props.location.state.tags.join(" ")}
               </div>
-            )}
+            </div>
             <div className="img_container">
               <div className="title">Choose an image </div>
               <Masonry
