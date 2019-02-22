@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
 @import url("https://fonts.googleapis.com/css?family=Baloo+Chettan");
 
-$th_blue: #2193b0;
+$th_blue: #6dd5ed;
 $th_black: #2b2b2b;
+$th_grad: linear-gradient(to right, #2193b0, #6dd5ed);
 
 * {
   box-sizing: border-box;
@@ -112,7 +113,7 @@ body {
     }
     .button {
       cursor: pointer;
-      background: linear-gradient(to right, #2193b0, #6dd5ed);
+      background: $th_grad;
       color: #fff;
       font-size: 20px;
       padding: 10px 20px;
@@ -339,7 +340,7 @@ body {
       font-size: 15px;
       background: $th_blue;
       padding: 5px 10px;
-      color: darken($color: $th_blue, $amount: 30%);
+      color: darken($color: $th_blue, $amount: 40%);
       text-align: center;
       margin: 0 auto;
       border-radius: 5px;
@@ -489,7 +490,7 @@ body {
       .button {
         height: 9%;
         width: 100%;
-        background: linear-gradient(to right, #2193b0, #6dd5ed);
+        background: $th_grad;
         color: #fff;
         font-size: 25px;
         letter-spacing: 3px;
