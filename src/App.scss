@@ -3,7 +3,7 @@
 
 $th_blue: #6dd5ed;
 $th_black: #2b2b2b;
-$th_grad: linear-gradient(to right, #2193b0, #6dd5ed);
+// $th_grad: linear-gradient(to right, #2193b0, #6dd5ed);
 
 * {
   box-sizing: border-box;
@@ -98,7 +98,6 @@ body {
     }
     .heading {
       font-size: 80px;
-      font-family: "Baloo Chettan", cursive;
       font-weight: 700;
       letter-spacing: 5px;
       color: $th_black;
@@ -110,10 +109,14 @@ body {
       letter-spacing: 3px;
       color: lighten($color: $th_black, $amount: 10%);
       margin: 10px 0;
+      background: #2193b0;
+      padding: 10px 15px;
+      border-radius: 3px;
+      color: #fff;
     }
     .button {
       cursor: pointer;
-      background: $th_grad;
+      background: $th_black;
       color: #fff;
       font-size: 20px;
       padding: 10px 20px;
@@ -490,7 +493,7 @@ body {
       .button {
         height: 9%;
         width: 100%;
-        background: $th_grad;
+        background: $th_black;
         color: #fff;
         font-size: 25px;
         letter-spacing: 3px;

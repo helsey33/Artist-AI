@@ -25,7 +25,7 @@ export default function Home() {
           <div className="content">
             <div className="heading">AI ARTIST</div>
             <div className="sub">
-              An AI to provide illustrations to your written content.
+              An AI to provide illustrations to your written content
             </div>
             <Link to="/demo" className="btn">
               <div className="button">DEMO</div>
