@@ -27,6 +27,9 @@ body {
 
 .main {
   background: #eaeaea;
+  .mobile {
+    display: none;
+  }
 }
 
 #navbar {
@@ -301,7 +304,8 @@ body {
     }
   }
   .searchBar {
-    height: 20vh;
+    height: 10vh;
+    margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -503,6 +507,33 @@ body {
         border-radius: 100px;
         cursor: pointer;
       }
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  #navbar,
+  #landing,
+  #about,
+  #gallery,
+  #contact,
+  #footer {
+    display: none;
+  }
+  .mobile {
+    height: 100vh;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    background: url("./assets/landing.jpg") no-repeat center center;
+    background-size: cover;
+    h4 {
+      margin: 0;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 15px 15px;
+      color: #fff;
+      text-align: center;
+      font-size: 20px;
     }
   }
 }

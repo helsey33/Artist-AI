@@ -19,6 +19,12 @@ const img1 = require("./../../assets/gallery/1.jpg"),
 export default function Home() {
   return (
     <div className="main">
+      <div className="mobile">
+        <h4>
+          Sorry, but we are not available on phones as of now. Please open in a
+          desktop.
+        </h4>
+      </div>
       <NavBar />
       <section id="landing">
         <div className="container">
