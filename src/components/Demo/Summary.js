@@ -174,9 +174,9 @@ export default class Summary extends Component {
               )}
             </form>
             <div className="label_wrapper">
-              <div className="label">
-                {this.props.location.state.tags.join(" ")}
-              </div>
+              {this.props.location.state.tags.map(el => (
+                <div className="label">{el}</div>
+              ))}
             </div>
             <div className="img_container">
               <div className="title">Choose an image </div>

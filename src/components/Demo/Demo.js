@@ -75,12 +75,12 @@ export default class Demo extends Component {
     return (
       <div>
         <div id="demo">
-          <div className="title">Enter your story</div>
+          <div className="title">Enter your content</div>
           <form className="container" onSubmit={this.onFormSubmit}>
             <textarea
               name="text"
               id="text"
-              placeholder="Enter your story"
+              placeholder="Enter your content"
               onChange={this.onchange}
             />
             {this.state.error && (

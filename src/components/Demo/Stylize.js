@@ -113,11 +113,14 @@ export default class Stylize extends Component {
           </div>
           <div className="img_container">
             {this.props.loading ? (
-              <img src={spinner} alt="Loading" className="spinner" />
+              <div className="spinner">
+                <img src={spinner} alt="Loading" />
+              </div>
             ) : (
               <img
                 src={this.props.styledImage || this.props.image.full}
                 alt=""
+                className="main_img"
               />
             )}
             <div className="button" onClick={this.download}>

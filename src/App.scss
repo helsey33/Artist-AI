@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Baloo+Chettan");
 
-$th_blue: #5fbfe7;
+$th_blue: #2193b0;
 $th_black: #2b2b2b;
 
 * {
@@ -86,7 +87,7 @@ body {
       left: 0;
       bottom: 0;
       z-index: 0;
-      box-shadow: inset 0 0 3000px rgba(255, 255, 255, 0.7);
+      box-shadow: inset 0 0 3000px rgba(255, 255, 255, 0.9);
       filter: blur(10px);
       margin: -20px;
       z-index: -1;
@@ -95,22 +96,23 @@ body {
       text-align: center;
     }
     .heading {
-      font-size: 100px;
+      font-size: 80px;
+      font-family: "Baloo Chettan", cursive;
       font-weight: 700;
       letter-spacing: 5px;
       color: $th_black;
       text-shadow: 0px 0px 1px 1px #fff;
-      margin: 30px 0;
+      margin: 10px 0;
     }
     .sub {
-      font-size: 20px;
+      font-size: 25px;
       letter-spacing: 3px;
       color: lighten($color: $th_black, $amount: 10%);
-      margin: 30px 0;
+      margin: 10px 0;
     }
     .button {
       cursor: pointer;
-      background: $th_black;
+      background: linear-gradient(to right, #2193b0, #6dd5ed);
       color: #fff;
       font-size: 20px;
       padding: 10px 20px;
@@ -163,13 +165,13 @@ body {
         justify-content: center;
         align-items: center;
         .head {
-          font-size: 60px;
+          font-size: 40px;
           width: 80%;
         }
         .details {
           width: 80%;
-          margin: 30px auto;
-          font-size: 25px;
+          margin: 10px auto;
+          font-size: 20px;
           color: lighten($color: $th_black, $amount: 20%);
           text-align: justify;
         }
@@ -277,8 +279,8 @@ body {
 
 #summary {
   .story {
-    height: 80vh;
-    background: url("./assets/summary_bg.jpeg") no-repeat center center;
+    height: 50vh;
+    background: url("./assets/summary_bg.png") no-repeat center center;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -290,7 +292,7 @@ body {
       color: $th_black;
       font-size: 20px;
       text-align: justify;
-      max-height: 100%;
+      max-height: 90%;
       overflow-y: scroll;
     }
   }
@@ -328,13 +330,19 @@ body {
   }
 
   .label_wrapper {
-    background: #eee;
     padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    margin: 0 auto;
     .label {
-      font-size: 20px;
-      width: 80%;
-      text-align: justify;
+      font-size: 15px;
+      background: $th_blue;
+      padding: 5px 10px;
+      color: darken($color: $th_blue, $amount: 30%);
+      text-align: center;
       margin: 0 auto;
+      border-radius: 5px;
     }
   }
   .img_container {
@@ -451,25 +459,44 @@ body {
     }
     .img_container {
       max-height: 100%;
+      width: 100%;
       overflow: hidden;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-between;
       img {
-        width: 100%;
+        max-width: 100%;
         object-fit: cover;
         height: 90%;
         border-radius: 5px;
+      }
+      .spinner {
+        top: 0;
+        left: 0;
+        height: 90%;
+        border-radius: 5px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          height: 15%;
+          width: 15%;
+        }
       }
 
       .button {
         height: 9%;
         width: 100%;
-        background: $th_black;
+        background: linear-gradient(to right, #2193b0, #6dd5ed);
         color: #fff;
         font-size: 25px;
         letter-spacing: 3px;
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: 5px;
+        border-radius: 100px;
         cursor: pointer;
       }
     }
