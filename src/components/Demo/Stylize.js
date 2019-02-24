@@ -21,16 +21,6 @@ export default class Stylize extends Component {
         url: require("./../../assets/styles/smooth_ride.jpg")
       },
       {
-        value: "purple_storm",
-        name: "Purple Storm",
-        url: require("./../../assets/styles/purple_storm.jpg")
-      },
-      {
-        value: "yellow_collage",
-        name: "Yellow Collage",
-        url: require("./../../assets/styles/yellow_collage.jpg")
-      },
-      {
         value: "oily_mcoilface",
         name: "Oily McOilface",
         url: require("./../../assets/styles/oily_mcoilface.jpg")
@@ -41,34 +31,9 @@ export default class Stylize extends Component {
         url: require("./../../assets/styles/crafty_painting.jpg")
       },
       {
-        value: "post_modern",
-        name: "Post Modern",
-        url: require("./../../assets/styles/post_modern.jpg")
-      },
-      {
-        value: "spagetti_accident",
-        name: "Spagetti Accident",
-        url: require("./../../assets/styles/spagetti_accident.jpg")
-      },
-      {
-        value: "creativity",
-        name: "Creativity",
-        url: require("./../../assets/styles/creativity.jpg")
-      },
-      {
         value: "bright_sand",
         name: "Bright Sand",
         url: require("./../../assets/styles/bright_sand.jpg")
-      },
-      {
-        value: "blue_granite",
-        name: "Blue Granite",
-        url: require("./../../assets/styles/blue_granite.jpg")
-      },
-      {
-        value: "cinnamon_rolls",
-        name: "Cinnamon Rolls",
-        url: require("./../../assets/styles/cinnamon_rolls.jpg")
       },
       {
         value: "dark_soul",
@@ -79,11 +44,6 @@ export default class Stylize extends Component {
         value: "gan_vogh",
         name: "Gan Vogh",
         url: require("./../../assets/styles/gan_vogh.jpg")
-      },
-      {
-        value: "purple_pond",
-        name: "Purple Pond",
-        url: require("./../../assets/styles/purple_pond.jpg")
       },
       {
         value: "sunday",

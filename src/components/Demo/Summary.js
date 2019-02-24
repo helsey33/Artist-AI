@@ -137,7 +137,14 @@ export default class Summary extends Component {
   };
 
   render() {
-    const { story, images, selectedImage, loading, styledImage } = this.state;
+    const {
+      story,
+      images,
+      selectedImage,
+      loading,
+      styledImage,
+      phrase
+    } = this.state;
     const masonryOptions = {
       transitionDuration: 0
     };
@@ -173,11 +180,13 @@ export default class Summary extends Component {
                 <input type="submit" className="button" value="SEARCH" />
               )}
             </form>
-            <div className="label_wrapper">
-              {this.props.location.state.tags.map(el => (
-                <div className="label">{el}</div>
-              ))}
-            </div>
+            {!phrase && (
+              <div className="label_wrapper">
+                {this.props.location.state.tags.map(el => (
+                  <div className="label">{el}</div>
+                ))}
+              </div>
+            )}
             <div className="img_container">
               <div className="title">Choose an image </div>
               <Masonry

@@ -108,7 +108,9 @@ export default function Home() {
           </a>
         </div>
       </section>
-      <div id="footer">© 2018 AiArtist. All rights reserved.</div>
+      <div id="footer">
+        © {new Date().getFullYear()} AiArtist. All rights reserved.
+      </div>
     </div>
   );
 }

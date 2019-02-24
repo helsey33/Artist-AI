@@ -341,7 +341,7 @@ body {
     padding: 20px 0;
     display: flex;
     flex-wrap: wrap;
-    width: 40%;
+    width: 50%;
     margin: 0 auto;
     .label {
       font-size: 15px;
@@ -349,7 +349,7 @@ body {
       padding: 5px 10px;
       color: darken($color: $th_blue, $amount: 40%);
       text-align: center;
-      margin: 0 auto;
+      margin: 0 10px;
       border-radius: 5px;
     }
   }
